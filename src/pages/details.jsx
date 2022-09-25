@@ -25,7 +25,7 @@ const ExchangeDetails = () => {
 
   return (
     <div>
-      <Card data={cryptoExchangeDetails}></Card>
+      <Card title={"Exchange Details"} data={cryptoExchangeDetails}></Card>
     </div>
   );
 };

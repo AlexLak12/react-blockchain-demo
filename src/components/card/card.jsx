@@ -10,14 +10,17 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 
-const Card = ({ data }) => {
+const Card = ({ title, data }) => {
   return (
     <div>
       <Link to="/">
         <div className="returnToMainPage">
-          <FaArrowLeft /> <span className="goBack">BACK</span>
+          <FaArrowLeft /> <span className="goBack">BACK TO MAIN PAGE</span>
         </div>
       </Link>{" "}
+      <br/>
+      <h1>{title}</h1>
+      <br/>
       <div className="mainPage">
         <div className="card">
           <img src={data.image} alt="" className="profile-img" />

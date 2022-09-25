@@ -14,6 +14,7 @@ const Table = ({ title, listData }) => {
                 <>
                   {colName !== "id" && (
                     <div
+                      data-testid="crypto_exchange_list_header_names"
                       key={index}
                       className="CETable-cell name-cell column-heading"
                     >
@@ -26,7 +27,10 @@ const Table = ({ title, listData }) => {
           </div>
           {Object.entries(listData).map((k) => {
             return (
-              <div className="CETable-row">
+              <div
+                className="CETable-row"
+                data-testid="crypto_exchange_list_rows"
+              >
                 {Object.keys(k[1]).map((key, index) => {
                   return (
                     <>
