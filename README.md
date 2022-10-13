@@ -1,1 +1,1 @@
-# stakefish-blockchain-assignment
+# react-blockchain-sample
